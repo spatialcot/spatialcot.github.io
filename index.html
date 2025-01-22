@@ -94,7 +94,7 @@
             <span class="author-block">
               Yuecheng Li<sup>*</sup>,
               Dafeng Chi<sup>*</sup>, Shiguang Wu<sup>*</sup>, Zhanguang Zhang, Yaochen Hu, Lingfeng Zhang,
-              Yingxue Zhang, Shuang Wu, Tongtong Cao, Guowei Huang, Guangjian Tian, Xingyue Quan, Jianye Hao, and Yuzheng Zhuang<sup>†</sup>
+              Yingxue Zhang, Shuang Wu, Tongtong Cao, Guowei Huang, Guangjian Tian, Xingyue Quan, Jianye Hao, Yuzheng Zhuang<sup>†</sup>
             </span>
 
               <!-- <a href="http://weiyuliu.com/">Dafeng Chi</a><sup>1</sup>,</span>
@@ -132,7 +132,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2211.04604"
+                <a href="https://arxiv.org/abs/2501.10074.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -142,7 +142,7 @@
               </span>
 
               <span class="link-block">
-                <a href="https://github.com/shiguang-wu/SpatialCoT.github.io"
+                <a href="https://spatialcot.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -204,8 +204,8 @@
           <p>
             To address these limitations, we propose a novel approach named
             SpatialCoT, specifically designed to bolster the spatial reasoning capabilities of VLMs. Our approach comprises two
-            stages: \textit{spatial coordinate bi-directional alignment}, which aligns vision-language inputs with spatial
-            coordinates, and \textit{chain-of-thought spatial grounding}, which harnesses the reasoning capabilities of language
+            stages: spatial coordinate bi-directional alignment, which aligns vision-language inputs with spatial
+            coordinates, and chain-of-thought spatial grounding, which harnesses the reasoning capabilities of language
             models for advanced spatial reasoning. We evaluate SpatialCoT on challenging navigation and manipulation tasks, both in
             simulation and real-world settings. Experimental results demonstrate that our method significantly outperforms previous
             state-of-the-art approaches in both tasks.
@@ -224,6 +224,64 @@
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">SpatialCoT Real-World Applications</h2>
+    </div>
+    <!-- <br> -->
+    <!-- <br> -->
+    <br>
+
+    <h3 class="title is-4" style="text-align: center;" >Rearrange different objects into different reasonable layouts</h3>
+      <div class="columns is-centered">
+
+        <div class="column">
+          <div class="content">
+            <video id="dollyzoom" autoplay controls muted playsinline height="100%">
+              <source src="media/revised_videos/success_1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="content">
+            <video id="dollyzoom" autoplay controls muted playsinline height="100%">
+              <source src="media/revised_videos/success_2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+  
+        <div class="column">
+          <div class="content">
+            <video id="dollyzoom" autoplay controls muted playsinline height="100%">
+              <source src="media/revised_videos/success_3.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="content">
+            <video id="dollyzoom" autoplay controls muted playsinline height="100%">
+              <source src="media/revised_videos/success_4.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
   </div>
 </section>
 
@@ -376,7 +434,7 @@
     <!-- <br> -->
     <br>
 
-    <h3 class="title is-4">▪️ Rearrange different objects into different reasonable layouts</h3>
+    <!-- <h3 class="title is-4">▪️ Rearrange different objects into different reasonable layouts</h3>
       <div class="columns is-centered">
 
         <div class="column">
@@ -405,17 +463,17 @@
             </video>
           </div>
         </div>
-      </div>
+      </div> -->
     <!-- <br> -->
     <!-- <br> -->
     <br>
 
-    <h3 class="title is-4">▪️ A comparison of real-world experiments between SpatialCoT (ours) and GPT-4.</h3>
+    <h3 class="title is-4">▪️ A comparison of real-world experiments between SpatialCoT (ours) and GPT4o.</h3>
     <p>
       
-      The experimental results on the first row are from SpatialCoT, and the results on the second row are from GPT-4. SpatialCoT can take physical constraints into account by
+      The experimental results on the first row are from SpatialCoT, and the results on the second row are from GPT4o. SpatialCoT can take physical constraints into account by
       first relocating occupied items to available space, and then placing the plate in a reasonable position. In contrast,
-      GPT-4 fails to accurately understand these constraints, directly placing the plate in the target position, which leads
+      GPT4o fails to accurately understand these constraints, directly placing the plate in the target position, which leads
       to physical collisions.
 
     </p>
